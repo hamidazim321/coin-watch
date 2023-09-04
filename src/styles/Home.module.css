@@ -1,4 +1,8 @@
 
+.Home {
+  background-color: rgb(236, 33, 101);
+}
+
 .coins {
   display: grid;
   grid-template-columns: auto auto;
@@ -8,6 +12,16 @@
 .coins > div {
   background-color: rgb(194, 16, 75);
   border: solid 1px white;
+}
+
+.search {
+  padding: 2px;
+  width: 30%;
+  height: 35px;
+  outline: none;
+  border: solid 2px rgb(194, 16, 75);
+  border-radius: 10px;
+  margin: 2%;
 }
 
 
