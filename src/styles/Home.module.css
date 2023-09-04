@@ -24,6 +24,14 @@
   margin: 2%;
 }
 
+.notFound {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 @media screen and (min-width: 550px) {
   .coins {

@@ -17,18 +17,35 @@ const Home = () => {
     || coin.name.toLowerCase().startsWith(search))
   );
 
-  if (pending) {
-    return (
+  let content;
+
+  if (coins.length > 1) {
+    content = (
+      <div className={Styles.Home}>
+        <div className={Styles.coins}>
+          {handleSearch().map((coin) => <Coin key={coin.nameid} props={coin} />)}
+        </div>
+      </div>
+    );
+  } else if (pending) {
+    content = (
       <div>
         <span>Loading</span>
       </div>
     );
+  } else if (error) {
+    content = (
+      <div>
+        <p>Error Fetching Coins</p>
+      </div>
+    );
   }
-
-  if (error) {
-    <div>
-      <p>Error Fetching Coins</p>
-    </div>;
+  if (handleSearch().length < 1 && coins.length > 1) {
+    content = (
+      <div>
+        <p className={Styles.notFound}>Search Result Not Found</p>
+      </div>
+    );
   }
 
   return (
@@ -39,9 +56,7 @@ const Home = () => {
         onChange={(e) => { setSearch(e.target.value.toLowerCase()); }}
         placeholder="Search Coin"
       />
-      <div className={Styles.coins}>
-        {handleSearch().map((coin) => <Coin key={coin.nameid} props={coin} />)}
-      </div>
+      {content}
     </div>
   );
 };
