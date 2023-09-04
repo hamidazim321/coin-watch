@@ -1,0 +1,31 @@
+
+.coins {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.coins > div {
+  background-color: rgb(194, 16, 75);
+  border: solid 1px white;
+}
+
+
+@media screen and (min-width: 550px) {
+  .coins {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  }
+
+  .coins > div {
+    border: none;
+  }
+  .coins > :nth-child(even) {
+    background-color: rgb(194, 16, 75);
+  }
+  
+  .coins > :nth-child(odd) {
+    background-color: rgb(236, 33, 101);
+  }
+}
