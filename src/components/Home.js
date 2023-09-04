@@ -5,29 +5,30 @@ import Coin from './Coin';
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { coins } = useSelector((state) => state.coins);
+  const { coins, pending, error } = useSelector((state) => state.coins);
   useEffect(() => {
     dispatch(fetchCoins());
   }, [dispatch]);
 
-  // let content;
-  // if (!pending && !error && coins.length > 0) {
-  //   content = (
-  //     <div>
-  //       {coins.map((coin) => <Coin key={coin.nameid} props={coin} />)}
-  //     </div>
-  //   );
-  // }
-
-  if (coins.length > 0) {
+  if (pending) {
     return (
       <div>
-        {coins.map((coin) => <Coin key={coin.nameid} props={coin} />)}
+        <span>Loading</span>
       </div>
     );
   }
 
-  return <p>Loading</p>;
+  if (error) {
+    <div>
+      <p>Error Fetching Coins</p>
+    </div>;
+  }
+
+  return (
+    <div>
+      {coins.map((coin) => <Coin key={coin.nameid} props={coin} />)}
+    </div>
+  );
 };
 
 export default Home;
