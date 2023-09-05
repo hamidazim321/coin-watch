@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa6';
 import Styles from '../styles/Coin.module.css';
 
 const Coin = ({ props }) => {
@@ -8,7 +9,7 @@ const Coin = ({ props }) => {
   } = props;
   return (
     <div className={Styles.coin}>
-      <NavLink to={`/Details/${id}`}>==</NavLink>
+      <NavLink className={Styles.arrow} to={`/Details/${id}`}><FaArrowRight /></NavLink>
       <p className={Styles.name}>{symbol}</p>
       <p className={Styles.rank}>{`Ranking: ${rank}`}</p>
     </div>
