@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import { COIN_DETAILS_URL } from './API';
+import styles from '../styles/Details.module.css';
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -31,29 +32,47 @@ const DetailsPage = () => {
     );
   } else if (typeof details === 'object') {
     content = (
-      <div>
-        <p>{details.symbol}</p>
-        <ul>
+      <div className={styles.coin}>
+        <div className={styles.listHeader}>
+          <p className={styles.headline}>{details.symbol}</p>
+          <span>
+            Rank in Market Place:
+            {details.rank}
+          </span>
+        </div>
+        <ul className={styles.list}>
           <li>
-            {`Name: ${details.name}`}
+            <p className={styles.category}>Name</p>
+            <span className={styles.data}>{details.name}</span>
           </li>
           <li>
-            {`Rank in Marketplace: ${details.rank}`}
+            <p className={styles.category}>Price</p>
+            <span className={styles.data}>{`$ ${details.price_usd}`}</span>
           </li>
           <li>
-            {`Price(USD): ${details.price_usd}`}
+            <p className={styles.category}>Market Cap</p>
+            <span className={styles.data}>{`$ ${details.market_cap_usd}`}</span>
           </li>
           <li>
-            {`Market Cap(USD): ${details.market_cap_usd}`}
+            <p className={styles.category}>Price Change weekly</p>
+            <span className={styles.data}>
+              {details.percent_change_7d}
+              %
+            </span>
           </li>
           <li>
-            {`Price Change weekly: ${details.percent_change_7d}%`}
+            <p className={styles.category}>Price Change daily</p>
+            <span className={styles.data}>
+              {details.percent_change_24h}
+              %
+            </span>
           </li>
           <li>
-            {`Price Change daily: ${details.percent_change_24h}%`}
-          </li>
-          <li>
-            {`Price Change hourly: ${details.percent_change_1h}%`}
+            <p className={styles.category}>Price Change hourly</p>
+            <span className={styles.data}>
+              {details.percent_change_1h}
+              %
+            </span>
           </li>
         </ul>
       </div>
@@ -66,7 +85,7 @@ const DetailsPage = () => {
     );
   }
   return (
-    <div>
+    <div className={styles.details}>
       <NavLink to="/">Back</NavLink>
       {content}
     </div>
