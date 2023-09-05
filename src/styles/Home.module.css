@@ -16,7 +16,7 @@
 
 .search {
   padding: 2px;
-  width: 30%;
+  width: 50%;
   height: 35px;
   outline: none;
   border: solid 2px rgb(194, 16, 75);
@@ -49,5 +49,9 @@
   
   .coins > :nth-child(odd) {
     background-color: rgb(236, 33, 101);
+  }
+
+  .search {
+    width: 30%;
   }
 }
