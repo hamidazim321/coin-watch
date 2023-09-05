@@ -10,19 +10,19 @@
 }
 
 .icon {
-  font-size: 24px;
+  font-size: 16px;
   color: white;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 5%;
+  gap: 10%;
   width: 50%;
 }
 
 .brand p {
-  font-size: 32px;
+  font-size: 24px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   color: white;
@@ -30,7 +30,7 @@
 }
 
 .logo {
-  font-size: 42px;
+  font-size: 32px;
   color: gold;
 }
 
@@ -40,4 +40,24 @@
   justify-content: flex-end;
   align-items: center;
   gap: 5%;
+}
+
+@media screen and (min-width: 550px) {
+
+  .brand {
+    gap: 5%;
+  }
+    
+  .brand p {
+    font-size: 32px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
 }
