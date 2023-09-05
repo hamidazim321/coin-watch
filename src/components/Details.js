@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { COIN_DETAILS_URL } from './API';
 import styles from '../styles/Details.module.css';
 
@@ -86,7 +86,6 @@ const DetailsPage = () => {
   }
   return (
     <div className={styles.details}>
-      <NavLink to="/">Back</NavLink>
       {content}
     </div>
 
