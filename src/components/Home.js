@@ -53,7 +53,7 @@ const Home = () => {
       <input
         className={Styles.search}
         type="text"
-        onChange={(e) => { setSearch(e.target.value.toLowerCase()); }}
+        onChange={(e) => { setSearch(e.target.value.toLowerCase().trim()); }}
         placeholder="Search Coin"
       />
       {content}
