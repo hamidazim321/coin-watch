@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 
 const DetailsPage = () => {
-  const n = 2;
+  const { id } = useParams();
   return (
     <div>
       <NavLink to="/">Back</NavLink>
-      <p>{`Details ${n}`}</p>
+      <p>{`Details ${id}`}</p>
     </div>
 
   );
