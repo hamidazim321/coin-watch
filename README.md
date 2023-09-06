@@ -63,14 +63,14 @@
 
 ### Live Demo <a name="live-demo"></a>
 
--  [See live](link)
+-  [See live](https://coin-watch-rhto.onrender.com/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Video Presentation <a name="presentation"></a>
 
--  [video presentation](link)
+-  [video presentation](https://www.loom.com/share/2ac279c6e4e04e46842ee05a46dec8b5?sid=f3285435-3188-4baa-9097-f181483ef2a3)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
