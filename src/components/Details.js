@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { COIN_DETAILS_URL } from './API';
 import styles from '../styles/Details.module.css';
 
@@ -26,8 +27,8 @@ const DetailsPage = () => {
 
   if (loading) {
     content = (
-      <div>
-        Loading
+      <div className={styles.loading}>
+        <AiOutlineLoading3Quarters />
       </div>
     );
   } else if (typeof details === 'object') {
@@ -79,8 +80,9 @@ const DetailsPage = () => {
     );
   } else if (typeof details !== 'object') {
     content = (
-      <div>
-        Coin Not Found
+      <div className={styles.notFound}>
+        <p>Coin Not Found</p>
+        <NavLink to="/">Go Back</NavLink>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { FiPhoneCall } from 'react-icons/fi';
 import { fetchCoins } from '../redux/Coins/coins';
 import Coin from './Coin';
 import Styles from '../styles/Home.module.css';
@@ -9,8 +10,10 @@ const Home = () => {
   const { coins, pending, error } = useSelector((state) => state.coins);
   const [search, setSearch] = useState('');
   useEffect(() => {
-    dispatch(fetchCoins());
-  }, [dispatch]);
+    if (coins.length < 1) {
+      dispatch(fetchCoins());
+    }
+  }, [dispatch, coins.length]);
 
   const handleSearch = () => (
     coins.filter((coin) => coin.symbol.toLowerCase().startsWith(search)
@@ -29,13 +32,14 @@ const Home = () => {
     );
   } else if (pending) {
     content = (
-      <div>
-        <span>Loading</span>
+      <div className={Styles.loading}>
+        <FiPhoneCall className={Styles.callIcon} />
+        <p>Calling Coins...</p>
       </div>
     );
   } else if (error) {
     content = (
-      <div>
+      <div className={Styles.notFound}>
         <p>Error Fetching Coins</p>
       </div>
     );
