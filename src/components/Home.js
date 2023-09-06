@@ -24,10 +24,8 @@ const Home = () => {
 
   if (coins.length > 1) {
     content = (
-      <div className={Styles.Home}>
-        <div className={Styles.coins}>
-          {handleSearch().map((coin) => <Coin key={coin.nameid} props={coin} />)}
-        </div>
+      <div className={Styles.coins}>
+        {handleSearch().map((coin) => <Coin key={coin.nameid} props={coin} />)}
       </div>
     );
   } else if (pending) {

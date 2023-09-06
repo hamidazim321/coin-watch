@@ -24,7 +24,7 @@ describe('DetailsPage', () => {
     );
 
     // Check if "Loading" text is displayed initially
-    const loadingIcon = document.querySelector('.loading')
+    const loadingIcon = document.querySelector('.loading');
     expect(loadingIcon).toBeInTheDocument();
 
     // Wait for the fetch request and data loading to complete
