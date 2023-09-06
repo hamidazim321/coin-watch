@@ -9,7 +9,9 @@ const Home = () => {
   const { coins, pending, error } = useSelector((state) => state.coins);
   const [search, setSearch] = useState('');
   useEffect(() => {
-    dispatch(fetchCoins());
+    if (coins.length < 1) {
+      dispatch(fetchCoins());
+    }
   }, [dispatch]);
 
   const handleSearch = () => (
