@@ -1,10 +1,10 @@
 import { render, fireEvent, waitFor } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect'; 
+import '@testing-library/jest-dom/extend-expect';
 import React from 'react';
-import { mockCoins } from './__mocks__/mockCoins';
 import { MemoryRouter } from 'react-router-dom';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
+import { mockCoins } from './__mocks__/mockCoins';
 import Home from '../components/Home';
 
 const mockStore = configureStore([]);
@@ -26,7 +26,7 @@ describe('Home Component', () => {
         <Provider store={store}>
           <Home />
         </Provider>
-      </MemoryRouter>
+      </MemoryRouter>,
     );
   });
 
