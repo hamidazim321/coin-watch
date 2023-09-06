@@ -94,4 +94,8 @@ li span {
     margin: 20% auto;
     font-size: 56px;
   }
+
+  .notFound {
+    margin: 15% auto;
+  }
 }
