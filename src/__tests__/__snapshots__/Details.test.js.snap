@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage renders loading initially and then displays coin details 1`] = `
+<div>
+  <div
+    class="details"
+  >
+    <div
+      class="coin"
+    >
+      <div
+        class="listHeader"
+      >
+        <p
+          class="headline"
+        >
+          BTC
+        </p>
+        <span>
+          Rank in Market Place:
+          1
+        </span>
+      </div>
+      <ul
+        class="list"
+      >
+        <li>
+          <p
+            class="category"
+          >
+            Name
+          </p>
+          <span
+            class="data"
+          >
+            Bitcoin
+          </span>
+        </li>
+        <li>
+          <p
+            class="category"
+          >
+            Price
+          </p>
+          <span
+            class="data"
+          >
+            $ 25767.96
+          </span>
+        </li>
+        <li>
+          <p
+            class="category"
+          >
+            Market Cap
+          </p>
+          <span
+            class="data"
+          >
+            $ 501726497779.56
+          </span>
+        </li>
+        <li>
+          <p
+            class="category"
+          >
+            Price Change weekly
+          </p>
+          <span
+            class="data"
+          >
+            -7.84
+            %
+          </span>
+        </li>
+        <li>
+          <p
+            class="category"
+          >
+            Price Change daily
+          </p>
+          <span
+            class="data"
+          >
+            0.25
+            %
+          </span>
+        </li>
+        <li>
+          <p
+            class="category"
+          >
+            Price Change hourly
+          </p>
+          <span
+            class="data"
+          >
+            0.06
+            %
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

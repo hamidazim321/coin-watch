@@ -128,22 +128,23 @@ export const mockCoins = [
 ]
 
 export const mockDetails = [
-  {
-    "id": "90",
-    "symbol": "BTC",
-    "name": "Bitcoin",
-    "nameid": "bitcoin",
-    "rank": 1,
-    "price_usd": "25767.96",
-    "percent_change_24h": "0.25",
-    "percent_change_1h": "0.06",
-    "percent_change_7d": "-7.84",
-    "price_btc": "1.00",
-    "market_cap_usd": "501726497779.56",
-    "volume24": 7226105206.242357,
-    "volume24a": 7356567443.02128,
-    "csupply": "19470946.00",
-    "tsupply": "19470946",
-    "msupply": "21000000"
-  }
-]
+    {
+      "id": "90",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "nameid": "bitcoin",
+      "rank": 1,
+      "price_usd": "25767.96",
+      "percent_change_24h": "0.25",
+      "percent_change_1h": "0.06",
+      "percent_change_7d": "-7.84",
+      "price_btc": "1.00",
+      "market_cap_usd": "501726497779.56",
+      "volume24": 7226105206.242357,
+      "volume24a": 7356567443.02128,
+      "csupply": "19470946.00",
+      "tsupply": "19470946",
+      "msupply": "21000000"
+    }
+  ];
+  
