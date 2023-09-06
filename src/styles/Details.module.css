@@ -21,7 +21,6 @@
 
 .list {
   list-style: none;
-  padding: 0;
   width: 100%;
   border: solid 2px rgb(194, 16, 75);
   padding: 1%;
@@ -79,6 +78,7 @@ li span {
   justify-content: center;
   align-items: center;
 }
+
 @keyframes spinning {
   0% {
     transform: rotate(360deg);
