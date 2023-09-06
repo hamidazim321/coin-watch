@@ -43,11 +43,10 @@
 }
 
 @media screen and (min-width: 550px) {
-
   .brand {
     gap: 5%;
   }
-    
+
   .brand p {
     font-size: 32px;
   }
@@ -59,5 +58,4 @@
   .icon {
     font-size: 24px;
   }
-
 }
