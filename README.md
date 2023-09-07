@@ -58,7 +58,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Provides accurate information on 100 different coins**
+- **Provides accurate information on top 90 Crypto coins**
 - **Provides Detailed information for individual coins**
 
 ### Live Demo <a name="live-demo"></a>
