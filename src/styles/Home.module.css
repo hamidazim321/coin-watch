@@ -7,14 +7,28 @@
 .coins {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 
-.coins > :nth-child(even) {
+.col1, 
+.col2{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.col1 > :nth-child(odd) {
+  background-color: rgb(236, 33, 101);
+}
+
+.col1 > :nth-child(even) {
   background-color: rgb(194, 16, 75);
 }
 
-.coins > :nth-child(odd) {
+.col2 > :nth-child(odd) {
+  background-color: rgb(194, 16, 75);
+}
+
+.col2 > :nth-child(even) {
   background-color: rgb(236, 33, 101);
 }
 
@@ -89,10 +103,12 @@
 }
 
 @media screen and (min-width: 550px) {
-  .coins {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  .col1 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .col2 {
+    grid-template-columns: auto auto auto;
   }
 
   .search {

@@ -25,7 +25,22 @@ const Home = () => {
   if (coins.length > 1) {
     content = (
       <div className={Styles.coins}>
-        {handleSearch().map((coin) => <Coin key={coin.nameid} props={coin} />)}
+        <div className={Styles.col1}>
+          {handleSearch().map((coin, index) => {
+            if (index % 2 === 0) {
+              return <Coin key={coin.nameid} props={coin} />;
+            }
+            return null;
+          })}
+        </div>
+        <div className={Styles.col2}>
+          {handleSearch().map((coin, index) => {
+            if (index % 2 !== 0) {
+              return <Coin key={coin.nameid} props={coin} />;
+            }
+            return null;
+          })}
+        </div>
       </div>
     );
   } else if (pending) {
