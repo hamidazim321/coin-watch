@@ -14,10 +14,10 @@ Object {
           type="text"
         />
         <div
-          class="Home"
+          class="coins"
         >
           <div
-            class="coins"
+            class="col1"
           >
             <div
               class="coin"
@@ -49,38 +49,6 @@ Object {
                 class="rank"
               >
                 Ranking: 1
-              </p>
-            </div>
-            <div
-              class="coin"
-            >
-              <a
-                class="arrow"
-                href="/Details/80"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 448 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  />
-                </svg>
-              </a>
-              <p
-                class="name"
-              >
-                ETH
-              </p>
-              <p
-                class="rank"
-              >
-                Ranking: 2
               </p>
             </div>
             <div
@@ -120,38 +88,6 @@ Object {
             >
               <a
                 class="arrow"
-                href="/Details/2710"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 448 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  />
-                </svg>
-              </a>
-              <p
-                class="name"
-              >
-                BNB
-              </p>
-              <p
-                class="rank"
-              >
-                Ranking: 4
-              </p>
-            </div>
-            <div
-              class="coin"
-            >
-              <a
-                class="arrow"
                 href="/Details/33285"
               >
                 <svg
@@ -177,38 +113,6 @@ Object {
                 class="rank"
               >
                 Ranking: 5
-              </p>
-            </div>
-            <div
-              class="coin"
-            >
-              <a
-                class="arrow"
-                href="/Details/58"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  stroke="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 448 512"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                  />
-                </svg>
-              </a>
-              <p
-                class="name"
-              >
-                XRP
-              </p>
-              <p
-                class="rank"
-              >
-                Ranking: 6
               </p>
             </div>
             <div
@@ -244,6 +148,106 @@ Object {
               </p>
             </div>
           </div>
+          <div
+            class="col2"
+          >
+            <div
+              class="coin"
+            >
+              <a
+                class="arrow"
+                href="/Details/80"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
+              </a>
+              <p
+                class="name"
+              >
+                ETH
+              </p>
+              <p
+                class="rank"
+              >
+                Ranking: 2
+              </p>
+            </div>
+            <div
+              class="coin"
+            >
+              <a
+                class="arrow"
+                href="/Details/2710"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
+              </a>
+              <p
+                class="name"
+              >
+                BNB
+              </p>
+              <p
+                class="rank"
+              >
+                Ranking: 4
+              </p>
+            </div>
+            <div
+              class="coin"
+            >
+              <a
+                class="arrow"
+                href="/Details/58"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                  />
+                </svg>
+              </a>
+              <p
+                class="name"
+              >
+                XRP
+              </p>
+              <p
+                class="rank"
+              >
+                Ranking: 6
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -258,10 +262,10 @@ Object {
         type="text"
       />
       <div
-        class="Home"
+        class="coins"
       >
         <div
-          class="coins"
+          class="col1"
         >
           <div
             class="coin"
@@ -293,38 +297,6 @@ Object {
               class="rank"
             >
               Ranking: 1
-            </p>
-          </div>
-          <div
-            class="coin"
-          >
-            <a
-              class="arrow"
-              href="/Details/80"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                />
-              </svg>
-            </a>
-            <p
-              class="name"
-            >
-              ETH
-            </p>
-            <p
-              class="rank"
-            >
-              Ranking: 2
             </p>
           </div>
           <div
@@ -364,38 +336,6 @@ Object {
           >
             <a
               class="arrow"
-              href="/Details/2710"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                />
-              </svg>
-            </a>
-            <p
-              class="name"
-            >
-              BNB
-            </p>
-            <p
-              class="rank"
-            >
-              Ranking: 4
-            </p>
-          </div>
-          <div
-            class="coin"
-          >
-            <a
-              class="arrow"
               href="/Details/33285"
             >
               <svg
@@ -428,38 +368,6 @@ Object {
           >
             <a
               class="arrow"
-              href="/Details/58"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-                />
-              </svg>
-            </a>
-            <p
-              class="name"
-            >
-              XRP
-            </p>
-            <p
-              class="rank"
-            >
-              Ranking: 6
-            </p>
-          </div>
-          <div
-            class="coin"
-          >
-            <a
-              class="arrow"
               href="/Details/46971"
             >
               <svg
@@ -485,6 +393,106 @@ Object {
               class="rank"
             >
               Ranking: 7
+            </p>
+          </div>
+        </div>
+        <div
+          class="col2"
+        >
+          <div
+            class="coin"
+          >
+            <a
+              class="arrow"
+              href="/Details/80"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </a>
+            <p
+              class="name"
+            >
+              ETH
+            </p>
+            <p
+              class="rank"
+            >
+              Ranking: 2
+            </p>
+          </div>
+          <div
+            class="coin"
+          >
+            <a
+              class="arrow"
+              href="/Details/2710"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </a>
+            <p
+              class="name"
+            >
+              BNB
+            </p>
+            <p
+              class="rank"
+            >
+              Ranking: 4
+            </p>
+          </div>
+          <div
+            class="coin"
+          >
+            <a
+              class="arrow"
+              href="/Details/58"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                />
+              </svg>
+            </a>
+            <p
+              class="name"
+            >
+              XRP
+            </p>
+            <p
+              class="rank"
+            >
+              Ranking: 6
             </p>
           </div>
         </div>
