@@ -1,0 +1,126 @@
+
+.Home {
+  background-color: rgb(236, 33, 101);
+  min-height: 100vh;
+}
+
+.coins {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.col1,
+.col2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.col1 > :nth-child(odd) {
+  background-color: rgb(236, 33, 101);
+}
+
+.col1 > :nth-child(even) {
+  background-color: rgb(194, 16, 75);
+}
+
+.col2 > :nth-child(odd) {
+  background-color: rgb(194, 16, 75);
+}
+
+.col2 > :nth-child(even) {
+  background-color: rgb(236, 33, 101);
+}
+
+.search {
+  padding: 2px;
+  width: 50%;
+  height: 35px;
+  outline: none;
+  border: solid 2px rgb(194, 16, 75);
+  border-radius: 10px;
+  margin: 2%;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: sticky;
+  z-index: 100;
+  top: 2%;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50% auto;
+  font-size: 32px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.callIcon {
+  font-size: 48px;
+  animation: ringing 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ringing {
+  0% {
+    transform: translate(10px, 10px);
+  }
+
+  10% {
+    transform: translate(-10px, -10px);
+  }
+
+  20% {
+    transform: translate(10px, 10px);
+  }
+
+  30% {
+    transform: translate(-10px, -10px);
+  }
+
+  40% {
+    transform: translate(10px, 10px);
+  }
+
+  50% {
+    transform: translate(-10px, -10px);
+  }
+
+  60% {
+    transform: rotate(360deg);
+  }
+}
+
+.notFound {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 550px) {
+  .col1 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .col2 {
+    grid-template-columns: auto auto auto;
+  }
+
+  .search {
+    width: 30%;
+  }
+
+  .loading {
+    margin: 20% auto;
+    font-size: 48px;
+  }
+
+  .callIcon {
+    font-size: 56px;
+  }
+}
